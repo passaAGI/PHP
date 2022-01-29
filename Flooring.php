@@ -51,9 +51,9 @@
         $d = $array[0][3];
         $s = 0;
         $s += (($a + $b + $c + $d) / 2); //semiperimeter
-        $alpha = $array[1][0];
+        $alpha = $array[1][0]; //angles
         $gamma = $array[1][1];
-        $sumOfAngles = $array[1][0] + $array[1][1];
+        $sumOfAngles = $alpha + $gamma;
 
         if ($sumOfAngles != 3.1415926536) {
             return sqrt(((($s - $a) * ($s - $b) * ($s - $c) * ($s - $d)) - (($a * $b * $c * $d) * pow(cos(($alpha + $gamma) / 2), 2))));

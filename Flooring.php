@@ -31,7 +31,7 @@
         global $anglesRadRectangle;
         $arrayAndAngles = [$shape, $anglesRad];
         $arrayAndAnglesRectangle = [$shape, $anglesRadRectangle];
-        if (count($shape) > 2) {
+        if (count($shape) == 4) {
             return $arrayAndAngles;
         }
         else {
@@ -58,7 +58,7 @@
         if ($sumOfAngles != 3.1415926536) {
             return sqrt(((($s - $a) * ($s - $b) * ($s - $c) * ($s - $d)) - (($a * $b * $c * $d) * pow(cos(($alpha + $gamma) / 2), 2))));
         }
-        elseif (count($array[1]) == 2) {
+        elseif (count($array[0] == 2)) {
             return sqrt(($s - $a) * ($s - $b) * ($s - $c) * ($s - $d));
         }
     }

@@ -59,7 +59,7 @@
             return sqrt(((($s - $a) * ($s - $b) * ($s - $c) * ($s - $d)) - (($a * $b * $c * $d) * pow(cos(($alpha + $gamma) / 2), 2))));
         }
         elseif (count($array[0] == 2)) {
-            return sqrt(($s - $a) * ($s - $b) * ($s - $c) * ($s - $d));
+            return sqrt(($s - $a) * ($s - $b) * ($s - $c) * ($s - $d)); //Brahmagupta's formula
         }
     }
 

@@ -69,7 +69,7 @@
         }
         for($i = 0; $i < count($freqList); $i++){
             $freq = $freqList[$i][0];
-            $langDict[$langNames[$i]] = 1 - cosineSimilarity(dotProduct($freq, $freqTest)); //PROBLEMI QUI
+            $langDict[$langNames[$i]] = 1 - cosineSimilarity(dotProduct($freq, $freqTest)); //PROBLEMI QUI; FOREACH?
             //echo $freqList[$i][0] . "<br>";
         }
         $langValues = [array_values($langDict)];

@@ -79,7 +79,7 @@
             $stringToArray[1] = rtrim($stringToArray[1], substr($stringToArray[1], -1));
             $stringToArray[1] .= $aug;
         } 
-        elseif((substr($stringToArray[1], 0, strlen($temp) - strlen($stringToArray[1])+1) > 5) && (strlen($temp % 2 == 0))){
+        elseif((substr($stringToArray[1], 0, strlen($temp) - strlen($stringToArray[1])+1) > 5) && (strlen($temp % 2 == 0))){ //fix this
         	$aug = (substr($stringToArray[1], -1));
             $stringToArray[1] = rtrim($stringToArray[1], substr($stringToArray[1], -1));
             $stringToArray[1] .= $aug;

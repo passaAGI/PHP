@@ -71,7 +71,7 @@
     function floorNum($num, $precision, $separator){
         $precision = $precision;
         $numToString = strval($num);
-        $stringToArray = explode($separator, $numToString);
+        $stringToArray = explode(".", $numToString);
         $temp = $stringToArray[1];
         $stringToArray[1] = substr($stringToArray[1], 0, $precision);
         if((substr($stringToArray[1], 0, strlen($temp) - strlen($stringToArray[1])) > 5) && (strlen($temp % 2 != 0))){
@@ -92,9 +92,9 @@
             echo $result;
     }
 
-    floorNum($sample1, 2, ".");
+    floorNum($sample1, 2, ",");
     echo "<br>";
-    floorNum($sample2, 2, ".");
+    floorNum($sample2, 4, ".");
     echo "<br>";
-    floorNum($sample3, 1, ".");
+    floorNum($sample3, 3, ".");
 ?>

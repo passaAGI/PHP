@@ -50,4 +50,40 @@
     foreach($ceu as $key=>$value){
         echo "The capital of " .$key. " is $value<br>";
     }
+
+    /*
+    18. Write a PHP function to floor decimal numbers with precision. Go to the editor
+    Note: Accept three parameters number, precision, and $separator
+    Sample Data :
+    1.155, 2, "."
+    100.25781, 4, "."
+    -2.9636, 3, "."
+
+    Expected Output :
+    1.15
+    100.2578
+    -2.964
+    */
+    $sample1 = 1.155;
+    $sample2 = 100.25781;
+    $sample3 = -2.9636;
+
+    function floorNum($num, $precision, $separator){
+        $precision = $precision;
+        $numToString = strval($num);
+        $stringToArray = explode($separator, $numToString);
+        $stringToArray[1] = substr($stringToArray[1], 0, $precision);
+        $result = implode($separator, $stringToArray);
+        if($precision == 0){
+            echo $result[0];
+        }
+        else
+            echo $result;
+    }
+
+    floorNum($sample1, 2, ".");
+    echo "<br>";
+    floorNum($sample2, 4, ".");
+    echo "<br>";
+    floorNum($sample3, 3, ".");
 ?>

@@ -6,7 +6,7 @@
     program calculate how much it would cost to cover the area specified with the flooring.
     Tips: This is a relatively simple program. Be sure to first find out how much area the floor is and
     then multiply that by the cost per unit of flooring. Start with some simple numbers that you can
-    quickly calculate in your head. Try a 10 x 10 ft room with each unit of flooring costing $1.00.
+    quickly calculate in your head.
     Added Difficulty: Calculate how much flooring would be needed for non-rectangular rooms.
     */
     $rectangle = [10, 5];

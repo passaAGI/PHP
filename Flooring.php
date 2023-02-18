@@ -45,7 +45,8 @@
     $anglesRadRectangle = [(3.1415926536 / 2), (3.1415926536 / 2)];
 
     function bretschneider($array) { //Bretschneider's formula
-        $a = $array[0][0]; //length of sides
+        //length of sides
+        $a = $array[0][0];
         $b = $array[0][1];
         $c = $array[0][2];
         $d = $array[0][3];
